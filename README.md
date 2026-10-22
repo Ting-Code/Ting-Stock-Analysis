@@ -85,6 +85,23 @@ Ting-Stock-Analysis/
 - [ ] 板块分析（第二版）
 - [ ] 本地数据缓存，减少重复拉取
 
+## 给协作者 / AI
+
+别人克隆本仓库后，用 Cursor（或其他能读仓库的 AI）即可按同一套方式出页：
+
+1. 打开项目，确保 AI 能读到根目录 **`AGENTS.md`**（以及 `.cursor/rules/`）。  
+2. 安装依赖：`pip install -r requirements.txt`  
+3. 对 AI 说（可直接复制）：
+
+```text
+请阅读 AGENTS.md 与 docs/方案.md，用本仓库现有流水线为「宁德时代」生成复盘 HTML，
+不要从零手写页面。生成后告诉我 output 路径，并简述 PE/PB/股息率与口径。
+```
+
+4. 或本地直接跑：`python scripts/generate_stock_html.py <名称或代码>`
+
+AI 应复用 `src/*` 流水线与 HTML 母版，而不是每次新写一页静态假数据。更细的约定见 [`AGENTS.md`](AGENTS.md)。
+
 ## 免责声明
 
 本项目仅供学习、研究与内容复盘参考，**不构成任何投资建议**。股市有风险，决策请独立判断并自行承担责任。作者不对依据本项目信息产生的任何盈亏负责。
