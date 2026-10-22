@@ -36,6 +36,7 @@ def main():
     fundamentals.to_csv(cache / 'fundamentals.csv', index=False)
     valuation.to_csv(cache / 'valuation.csv', index=False)
     print('DONE', path)
+    print('Open in browser:', path.resolve().as_uri())
 
 if __name__ == '__main__':
     main()

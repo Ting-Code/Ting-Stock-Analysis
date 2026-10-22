@@ -100,7 +100,7 @@ Ting-Stock-Analysis/
 
 4. 或本地直接跑：`python scripts/generate_stock_html.py <名称或代码>`
 
-AI 应复用 `src/*` 流水线与 HTML 母版，而不是每次新写一页静态假数据。更细的约定见 [`AGENTS.md`](AGENTS.md)。
+AI 应复用 `src/*` 流水线与 HTML 母版，而不是每次新写一页静态假数据。更细的约定见 [`AGENTS.md`](AGENTS.md)、[`docs/AI协作指南.md`](docs/AI协作指南.md)。
 
 ## 免责声明
 
